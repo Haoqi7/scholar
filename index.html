@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ResearchTools</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">   
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- <link href="css/theme.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">          
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                
+    <link rel="stylesheet" href="css/hero-slider-style.css">                              
+    <link rel="stylesheet" href="css/magnific-popup.css">                               
+    
+    <link rel="stylesheet" href="css/templatemo-style.css">    
+    <script src="css/ie-emulation-modes-warning.js.下载"></script>
+    <script src="css/jquery.min.js.下载"></script>                       
+
+    <script>
+        function time(){var h=new Date().getHours();h=h<10?("0"+h):h;var m=new Date().getMinutes();m=m<10?("0"+m):m;var s=new Date().getSeconds();s=s<10?("0"+s):s;document.getElementById("time").innerHTML=h+":"+m+":"+s}
+        function date(){
+            var m=new Date().getMonth();
+            m=m+1;var d=new Date().getDate();
+            d=d<10?(d):d;document.getElementById("date").innerHTML=m+"月"+d+"日"}
+        function day(){
+            var x;
+            var day=new Date().getDay();
+            switch(day){
+                case 0:x="日";break;
+                case 1:x="一";break;
+                case 2:x="二";break;
+                case 3:x="三";break;
+                case 4:x="四";break;
+                case 5:x="五";break;
+                case 6:x="六";break}
+                document.getElementById("day").innerHTML=" 星期"+x}setInterval(time,500);
+                setInterval(date,700);setInterval(day,1000);
+    </script>
+    <style>
+        .Q1{
+            font-size:22px;
+            border-radius: 5%;
+            color:white;
+            background-color: darkcyan;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+        .Q2{
+            font-size:22px;
+            border-radius: 5%;
+            color:white;
+            background-color: darkcyan;
+            /* background-color: rgb(8, 81, 138); */
+            font-family:'Times New Roman', Times, serif;
+            }
+        
+        .Q3{
+            font-size:22px;
+            border-radius: 5%;
+            color:white;
+            background-color: darkcyan;
+            /* background-color: rgb(212, 124, 53); */
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        
+        .Q4{
+            font-size:22px;
+            border-radius: 5%;
+            color:white;
+            background-color: darkcyan;
+            /* background-color: rgb(12, 112, 148); */
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        
+        .Q5{
+            font-size:22px;
+            border-radius: 5%;
+            color:white;
+            background-color: rgb(197, 113, 49);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        
+        .Q6{
+            font-size:23px;
+            border-radius: 5%;
+            color:white;
+            background-color: rgb(64, 109, 167);
+            /* background-color: rgb(179, 130, 137); */
+            font-family:'Times New Roman', Times, serif;
+            }
+
+        .Q7{
+            font-size:22.5px;
+            border-radius: 5%;
+            color:white;
+            background-color: rgb(99, 65, 133);
+            /* background-color: rgb(71, 146, 120); */
+            font-family:'Times New Roman', Times, serif;
+            }
+
+        .Q8{
+            font-size:23px;
+            border-radius: 5%;
+            color:white;
+            background-color: rgb(194, 118, 51);
+            /* background-color: rgb(71, 146, 120); */
+            font-family:'Times New Roman', Times, serif;
+            }
+        
+        .Q9{
+            font-size:23px;
+            border-radius: 5%;
+            color:white;
+            background-color: rgb(85, 120, 97);
+            /* background-color: rgb(71, 146, 120); */
+            font-family:'Times New Roman', Times, serif;
+            }
+        
+        .Q10{
+            font-size:23px;
+            border-radius: 5%;
+            color:white;
+            background-color: rgb(145, 121, 12);
+            /* background-color: rgb(71, 146, 120); */
+            font-family:'Times New Roman', Times, serif;
+            }
+
+        .item{
+            font-size:20px;
+            color: #000;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .text6 {
+            font-size:22px;
+            border-radius: 5%;
+            /* border: 1px red; */
+            /* width: 100px;
+            height: 30px; */
+            color:black;
+            background-color:rgb(91, 154, 75);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        
+        .navr{
+            color:gray;
+            font-size:22px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .leader{
+            font-size: 20px;
+        }
+        .up{
+            float: right; 
+            font-size: 20px;
+        }
+    </style>
+    
+    
+</head>
+
+    <body>
+        <!-- <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="">
+                 <a class="navr">
+                     <marquee Width="1000px" behavior="alternate">人类所抱有的疑念, 就是科学的萌芽 ！！</marquee></a>
+              </div>
+            </div>
+        </nav> -->
+        <div class="">
+            <ul class="cd-hero-slider">  <!--控制整体位置-->
+                <li class="selected"><!--控制背景-->
+                    <div class="cd-full-width"><!--控制上下移动-->
+                        <div class="container-fluid js-tm-page-content tm-page-1" data-page-no="1"> <!--控制方框大小-->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <br/>
+                                    <img src="img/tech.png" width="80" height="80">
+                                    <br/>
+                                    <br/>
+                                    <h2 class="tm-site-name">学术导航目录 -- 科研、论文与研究工具</h2>
+                                    <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-1-col">
+                                       
+
+                                        <hr/>
+                                        <div style="text-align: center;">
+                                            <a id="time" style="color: black;"></a>&nbsp;<a id="date" style="color: black;"></a>&nbsp;<a id="day" style="color: black;"></a>
+                                        </div>
+                                        <hr/>
+                                        <br/>
+
+                                        <a class="Q1">&nbsp;期刊分区&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                             <a href="http://www.letpub.com.cn/index.php?page=journalapp&view=search" target="_blank" style="color: #000;">SCI分区查询 ( LetPub ) </a>  &nbsp; | &nbsp; 
+                                             <a href="http://www.medsci.cn/sci/" target="_blank" style="color: #000;">MedSci 分区查询</a> &nbsp; | &nbsp; 
+                                             <a style="color: #000;">中科院分区查询 ( <a href="https://www.fenqubiao.com/" target="_blank">网页版</a>, <a href="https://mp.weixin.qq.com/s?__biz=MzI1MzA2MzM1NA==&mid=2659568062&idx=1&sn=f9eeca272657ae341f378116600c4d84&chksm=f2ab506bc5dcd97d60e33e5ec94b48e5d04e75587357aeb61ca9691fe7e4b13fc95b5a093f6e&scene=178&cur_album_id=2186492876136693765#rd" target="_blank">小程序版</a> )</a>
+                                        </div>
+                                        <br/><br/>
+
+                                        <a class="Q1">&nbsp;期刊查询&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="http://corejournal.lib.sjtu.edu.cn/" target="_blank" style="color: #000;">核心期刊查询</a> &nbsp; | &nbsp;
+                                            <a href="file/CCF2022.pdf" target="_blank" style="color: #000;">计算机顶会 / 顶刊 ( CCF )</a> &nbsp; | &nbsp;
+                                            <a href="http://www.edanzediting.com/journal_selector" target="_blank" style="color: #000;">可投稿期刊查询 </a>
+                                        </div>
+                                        <br/><br/>
+
+                                        <a class="Q2">&nbsp;&nbsp;Sci - Hub&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="https://sci-hub.st/" target="_blank" style="color: #000;">Sci-Hub</a>   &nbsp; | &nbsp; <a href="https://sci-hub.se/" target="_blank" style="color: #000;">Sci-Hub</a> &nbsp; | &nbsp; <a href="http://www.sci-hub.ren/" target="_blank" style="color: #000;">Sci-Hub</a> &nbsp; | &nbsp; <a href="http://www.sci-hub.ren/" target="_blank" style="color: #000;">Sci-Hub</a>
+                                        </div>
+                                        <br/><br/>
+
+                                        <a class="Q3">&nbsp;论文翻译&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="http://www.zhiyunwenxian.cn/" target="_blank" style="color: #000;">知云文献翻译</a> 
+                                        </div>
+                                        <br/><br/>
+
+                                        <a class="Q3">&nbsp;论文写作&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="https://www.overleaf.com/" target="_blank" style="color: #000;">Overleaf ( Latex在线编辑器 )</a>
+                                        </div>
+                                        <br/><br/>
+
+                                        <a class="Q4">&nbsp;论文润色&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="https://quillbot.com/" target="_blank" style="color: #000;">英文润色工具 Quillbot</a>  &nbsp; | &nbsp; <a href="https://www.deepl.com/translator" target="_blank" style="color: #000;">汉译英翻译 DeepL </a>  &nbsp; | &nbsp; <a href="https://www.grammarly.com/" target="_blank" style="color: #000;">语法检查 Grammarly</a>
+                                        </div>
+                                        <br/><br/>
+
+                                        <a class="Q4">&nbsp;论文查重&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="https://paperproject13.checkpass.net/" target="_blank" style="color: #000;">论文查重</a>
+                                        </div>
+                                        <br/><br/>
+
+                                        <a class="Q5">&nbsp;论文绘图&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="https://gitmind.cn/" target="_blank" style="color: #000;">GitMind (流程图、思维导图)  &nbsp; | &nbsp; <a href="https://www.iconfont.cn/" target="_blank" style="color: #000;">阿里矢量图标库</a> 
+                                        </div>
+                                        <br/><br/>
+                                        
+                                        <a class="Q6">&nbsp;PDF工具&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="https://pdf.io/" target="_blank" style="color: #000;">PDF Tools</a> &nbsp; | &nbsp; <a href="https://smallpdf.com/" target="_blank" style="color: #000;">SmallPDF</a> &nbsp; | &nbsp; <a href="https://www.alltoall.net/" target="_blank" style="color: #000;">AllToAll ( PDF转换 )</a>
+                                        </div>
+                                        <br/><br/>
+
+                                        <a class="Q7">&nbsp;代码学习&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="https://github.com/Miraclelucy/dive_into_deep_learning" target="_blank" style="color: #000;">Pytorch (GitHub版本)</a> &nbsp; | &nbsp; <a href="file/d2l-zh-pytorch.pdf" target="_blank" style="color: #000;">Pytorch (PDF版本)</a> &nbsp; | &nbsp; <a href="https://www.tensorflow.org/versions/r2.5/api_docs/python/tf" target="_blank" style="color: #000;">Tensorflow API</a>  &nbsp; | &nbsp; <a href="https://pytorch.org/docs/stable/index.html" target="_blank" style="color: #000;">Pytorch API</a> 
+                                        </div>
+                                        <br/><br/>
+
+                                        <a class="Q9">&nbsp;实用工具&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="http://www.51pptmoban.com/" target="_blank" style="color: #000;">免费PPT模板</a> &nbsp; | &nbsp; <a href="https://www.polebrief.com/index" target="_blank" style="color: #000;">免费简历模板</a> &nbsp; | &nbsp; <a href="https://www.wondercv.com/" target="_blank" style="color: #000;">超级简历 CV</a> &nbsp; | &nbsp; <a href="https://www.remove.bg/zh/upload" target="_blank" style="color: #000;">图片背景消除 Removebg</a> 
+                                        </div>
+                                        <br/><br/>
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="http://pss-system.cnipa.gov.cn/" target="_blank" style="color: #000;">发明专利查询</a>&nbsp; | &nbsp; <a href="https://ps.gaoding.com/" target="_blank" style="color: #000;">在线PS图片</a> &nbsp; | &nbsp; <a href="http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/download/gkdownloads.html" target="_blank" style="color: #000;">国家公务员考试 (国考)</a> &nbsp; | &nbsp; <a href="http://81rc.81.cn/Civilianpost/index.htm" target="_blank" style="color: #000;">军队文职</a> &nbsp; | &nbsp; <a href="LOVE.html" target="_blank" style="color: #000;">爱心代码</a>
+                                        </div>
+                                        <br/><br/>
+                                        <div style="display: inline-block;" class="item">
+                                            <a href="https://www.cdgdc.edu.cn/dslxkpgjggb/" target="_blank" style="color: #000;">第四轮学科评估 (2017)</a>
+                                        </div>
+                                        <br/><br/><br/>
+  
+                                        <footer class="tm-footer">
+                                 
+                                        </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+                    
+        </div>
+
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        
+        <script src="js/jquery-1.11.3.min.js"></script>        
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>            
+        <script src="js/hero-slider-main.js"></script>        
+        <script src="js/jquery.magnific-popup.min.js"></script> 
+        
+        <script>
+            function adjustHeightOfPage(pageNo) {
+                var totalPageHeight = 15 + $('.cd-slider-nav').height()
+                                        + $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .js-tm-page-content").height() + 160
+                                        + $('.tm-footer').height();
+                if(totalPageHeight > $(window).height()) 
+                {
+                    $('.cd-hero-slider').addClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", totalPageHeight + "px");
+                }
+                else 
+                {
+                    $('.cd-hero-slider').removeClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
+                }
+
+            }
+            $(window).load(function(){
+                adjustHeightOfPage(1); 
+                $('.tm-img-gallery').magnificPopup({
+                    delegate: 'a', 
+                    type: 'image',
+                    gallery:{enabled:true}                
+                });
+                $('#tmNavbar a').click(function(){
+                    $('#tmNavbar').collapse('hide');
+
+                    adjustHeightOfPage($(this).data("no"));     
+                });
+                $( window ).resize(function() {
+                    var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
+                    adjustHeightOfPage( currentPageNo );
+                });
+                $('body').addClass('loaded');
+                           
+            });
+
+        </script>             
+
+</body>
+</html>
